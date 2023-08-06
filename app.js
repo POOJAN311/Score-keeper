@@ -1,8 +1,13 @@
 const displayp1 = document.querySelector('#displayply1');
+
 const displayp2 = document.querySelector('#displayply2');
+
 const button1 = document.querySelector('#scoreply1');
+
 const button2 = document.querySelector('#scoreply2');
+
 const reset = document.querySelector('#reset');
+
 const Playto = document.querySelector('#playto');
 
 var p1score = 0;
@@ -23,6 +28,7 @@ button1.addEventListener('click', function (e) {
         displayp1.textContent = p1score;
     }
 })
+
 button2.addEventListener('click', function (e) {
     if (!Gameover) {
         p2score += 1;
@@ -42,7 +48,9 @@ Playto.addEventListener('change', function () {
     Reset();
 })
 
+
 reset.addEventListener('click', Reset)
+
 
 function Reset() {
     Gameover = false;
