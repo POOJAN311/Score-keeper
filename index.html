@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <style>
+        .winner {
+            color: rgb(24, 211, 24);
+        }
+
+        .loser {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="section">
+
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half is-offset-one-quarter">
+                    <div class="card">
+                        <div class="card-image">
+                            <img class="image is-fullwidth"
+                                src="https://uploads-ssl.webflow.com/611b68bedd47db37c67ba1b3/6138d924c92c4433c1c807c4_Shooting-Guide.jpeg"
+                                alt="" srcset="">
+                        </div>
+                        <header class="card-header">
+                            <p class="card-header-title">
+                                Score Keeper
+                            </p>
+                            <button class="card-header-icon" aria-label="more options">
+                                <span class="icon">
+                                    <i class="fas fa-angle-down" aria-hidden="true"></i>
+                                </span>
+                            </button>
+                        </header>
+                        <div class="card-content">
+                            <div class="content">
+                                <h1 class="title is-1"><span id="displayply1">0</span> to <span id="displayply2"
+                                        ,>0</span>
+                                </h1>
+                                <p>Use the below buttons</p>
+                                <label for="playto" class="label is-large is-inline">Playing To</label>&nbsp;
+                                <div class="select is-rounded">
+                                    <select name="Totalscore" id="playto">
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="8">8</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <footer class="card-footer">
+                            <button class="button is-primary is-large card-footer-item" id="scoreply1">Player
+                                1</button>
+                            <button class="button is-info is-large card-footer-item" id="scoreply2">Player
+                                2</button>
+                            <button class="button is-danger is-large card-footer-item" id="reset">Reset</button>
+                    </div>
+                    <script src="app.js"></script>
+                    </footer>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+
+
+</body>
+
+</html>
